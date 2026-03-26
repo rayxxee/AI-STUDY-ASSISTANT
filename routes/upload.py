@@ -44,6 +44,8 @@ def upload_file():
             embeddings = get_embeddings(chunks)
             vector_store.add_texts(chunks, embeddings)
         except Exception as e:
+            import traceback
+            traceback.print_exc()
             return jsonify({'error': f'Failed during embedding generation: {str(e)}'}), 500
             
         # Cleanup
