@@ -25,6 +25,19 @@ with st.sidebar:
                     st.error(f"Failed to connect to backend: {e}")
         else:
             st.warning("Please select a file first.")
+            
+    st.divider()
+    st.subheader("Extract Insights")
+    if st.button("Generate Summary"):
+        with st.spinner("Analyzing knowledge base..."):
+            try:
+                res = requests.get(f"{API_BASE}/summarize")
+                if res.status_code == 200:
+                    st.info(res.json().get('summary', ''))
+                else:
+                    st.error(f"Error: {res.json().get('error', 'Unknown')}")
+            except Exception as e:
+                st.error(f"Failed to connect: {e}")
 
 # Main Chat Interface
 if "messages" not in st.session_state:
