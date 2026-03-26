@@ -33,7 +33,7 @@
 **Objective**: Build Streamlit UI connecting to the Flask backend effectively.
 **Requirements**: REQ-02
 
-### Phase 5: Agentic Tools & Deployment
-**Status**: ⬜ Not Started
+### Phase 5: Testing & Deployment Prep
+**Status**: ✅ Complete
 **Objective**: Integrate agent tools (PDF search tool) and Dockerize the entire system.
 **Requirements**: REQ-13, REQ-15
