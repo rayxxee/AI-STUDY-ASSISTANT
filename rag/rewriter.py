@@ -16,7 +16,7 @@ def rewrite_query(current_query, chat_history_str, api_key=None):
         return current_query
         
     genai.configure(api_key=key)
-    model = genai.GenerativeModel('gemini-1.5-flash')
+    model = genai.GenerativeModel('gemini-2.5-flash')
     
     prompt = f"""
 You are an intelligent search formulation AI bounding system. 

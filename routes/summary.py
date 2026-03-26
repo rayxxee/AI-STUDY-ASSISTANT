@@ -22,7 +22,7 @@ def summarize_endpoint():
     full_text = "\n".join(vector_store.texts)[:30000]
     
     genai.configure(api_key=key)
-    model = genai.GenerativeModel('gemini-1.5-flash')
+    model = genai.GenerativeModel('gemini-2.5-flash')
     
     prompt = f"""
 You are an expert AI Study Assistant.

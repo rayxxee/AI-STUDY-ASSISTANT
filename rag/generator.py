@@ -11,7 +11,7 @@ def generate_answer(query, retrieved_contexts, chat_history_str=None, api_key=No
         return "Error: GEMINI_API_KEY is not set."
         
     genai.configure(api_key=key)
-    model = genai.GenerativeModel('gemini-1.5-flash')
+    model = genai.GenerativeModel('gemini-2.5-flash')
     
     if not retrieved_contexts:
         return "I couldn't find any relevant context in your uploaded documents to answer this question."
