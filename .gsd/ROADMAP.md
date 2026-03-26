@@ -28,8 +28,8 @@
 **Objective**: Add chat history, basic text summarization, query rewriting, and multi-doc reasoning handling.
 **Requirements**: REQ-08, REQ-09, REQ-11, REQ-12, REQ-14
 
-### Phase 4: User Interface
-**Status**: ⬜ Not Started
+### Phase 4: Streamlit UI Integration
+**Status**: ✅ Complete
 **Objective**: Build Streamlit UI connecting to the Flask backend effectively.
 **Requirements**: REQ-02
 
