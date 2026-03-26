@@ -2,6 +2,9 @@ from flask import Flask
 from routes.upload import upload_bp
 from routes.query import query_bp
 from routes.summary import summary_bp
+from dotenv import load_dotenv
+
+load_dotenv()
 
 def create_app():
     app = Flask(__name__)

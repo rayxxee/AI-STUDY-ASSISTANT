@@ -1,6 +1,10 @@
 import streamlit as st
 import requests
 import os
+from dotenv import load_dotenv
+
+# Load variables from .env if present
+load_dotenv()
 
 API_BASE = os.getenv("API_BASE", "http://localhost:5000")
 
