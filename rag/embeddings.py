@@ -19,7 +19,7 @@ def get_embeddings(text_chunks, api_key=None):
     # The SDK handles batch embedding if wrapped correctly, but we'll do iterative for safety on limits.
     for chunk in text_chunks:
         response = genai.embed_content(
-            model="models/text-embedding-004",
+            model="models/gemini-embedding-001",
             content=chunk,
             task_type="retrieval_document",
         )
