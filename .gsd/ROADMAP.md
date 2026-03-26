@@ -14,7 +14,7 @@
 ## Phases
 
 ### Phase 1: Foundation (Data Ingestion & Vector Store)
-**Status**: ⬜ Not Started
+**Status**: ✅ Complete
 **Objective**: Setup Flask, handle document uploads, extract text, chunk, and embed into FAISS.
 **Requirements**: REQ-01 (partial), REQ-03, REQ-04, REQ-05
 
