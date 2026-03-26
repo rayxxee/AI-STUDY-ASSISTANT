@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  backend:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+    volumes:
+      - ./faiss_index.bin:/app/faiss_index.bin
+      - ./faiss_store.pkl:/app/faiss_store.pkl
+
+  frontend:
+    build:
+      context: .
+      dockerfile: ui/Dockerfile
+    ports:
+      - "8501:8501"
+    environment:
+      - API_BASE=http://backend:5000
+    depends_on:
+      - backend

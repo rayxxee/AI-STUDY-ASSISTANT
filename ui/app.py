@@ -1,7 +1,8 @@
 import streamlit as st
 import requests
+import os
 
-API_BASE = "http://localhost:5000"
+API_BASE = os.getenv("API_BASE", "http://localhost:5000")
 
 st.set_page_config(page_title="AI Study Assistant", layout="wide")
 st.title("📚 AI Study Assistant")
