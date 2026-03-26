@@ -14,6 +14,10 @@ venv.bak/
 
 # Project specifics
 .gsd/
+.agent/
+.agents/
+_agent/
+_agents/
 faiss_index.bin
 faiss_store.pkl
 temp_uploads/
