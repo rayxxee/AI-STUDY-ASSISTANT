@@ -4,7 +4,7 @@ import numpy as np
 import pickle
 
 class VectorStore:
-    def __init__(self, index_path=".gsd/faiss_index.bin", metadata_path=".gsd/faiss_metadata.pkl", dim=768):
+    def __init__(self, index_path=".gsd/faiss_index.bin", metadata_path=".gsd/faiss_metadata.pkl", dim=3072):
         self.index_path = index_path
         self.metadata_path = metadata_path
         self.dim = dim
