@@ -24,7 +24,7 @@
 **Requirements**: REQ-01 (partial), REQ-06, REQ-07, REQ-10 (Citations)
 
 ### Phase 3: Memory & Advanced Features
-**Status**: ⬜ Not Started
+**Status**: ✅ Complete
 **Objective**: Add chat history, basic text summarization, query rewriting, and multi-doc reasoning handling.
 **Requirements**: REQ-08, REQ-09, REQ-11, REQ-12, REQ-14
 
